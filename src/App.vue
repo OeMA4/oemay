@@ -1,23 +1,37 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+  <v-app>
+    <v-content class="content">
+      <router-view/>
+      <Footer/>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
+import Footer from './components/Footer'
 export default {
-  name: 'App'
+  name: 'App',
+  components: { Footer },
+  data () {
+    return {
+      //
+    }
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style scoped>
+.title {
+  font-size:larger;
+  color:brown;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-style: oblique;
+  font-family:fantasy
+}
+.option {
+  color:brown;
+}
+.content {
+  background-color:gainsboro
 }
 </style>
