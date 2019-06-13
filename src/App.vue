@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <v-content class="content">
+      <Header/>
       <router-view/>
       <Footer/>
     </v-content>
@@ -9,9 +10,10 @@
 
 <script>
 import Footer from './components/Footer'
+import Header from './components/Header'
 export default {
   name: 'App',
-  components: { Footer },
+  components: { Footer, Header },
   data () {
     return {
       //
