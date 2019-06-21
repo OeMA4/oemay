@@ -9,7 +9,9 @@
       flat
       tile>
       <v-card-title class="teal">
-        <strong class="subheading">Get in touch with me!</strong>
+        <strong class="subheading vue">Get in touch with me!</strong>
+        <v-spacer></v-spacer>
+        <span class="subheading vue">Designed with ❤️ and <v-btn round href="https://www.vuejs.org"> Vue.js </v-btn> </span>
         <v-spacer></v-spacer>
         <v-btn
           v-for="data in profiles"
@@ -41,9 +43,15 @@ export default {
       },
       {
         icon: 'Instagram',
-        link: ''
+        link: 'https://www.instagram.com/_oemay'
       }
     ]
   })
 }
 </script>
+
+<style scoped>
+.vue {
+  color: white;
+}
+</style>

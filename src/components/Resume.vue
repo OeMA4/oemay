@@ -1,6 +1,6 @@
 <template>
     <v-layout column>
-        <ResumeItem
+        <resume-item
         v-for="i in items"
         :key="i.id"
         :title="i.title"
@@ -11,6 +11,7 @@
 
 <script>
 import ResumeItem from './ResumeItem'
+
 export default {
   components: { ResumeItem },
   data () {
@@ -18,8 +19,26 @@ export default {
       items: [
         {
           id: '1',
-          title: 'asdasd',
-          description: 'adas',
+          title: 'Software Engineering',
+          description: 'Working for MaibornWolff',
+          date: '17/09'
+        },
+        {
+          id: '2',
+          title: 'Software Engineering',
+          description: 'Working for MaibornWolff',
+          date: '17/09'
+        },
+        {
+          id: '3',
+          title: 'Software Engineering',
+          description: 'Working for MaibornWolff',
+          date: '17/09'
+        },
+        {
+          id: '4',
+          title: 'Software Engineering',
+          description: 'Working for MaibornWolff',
           date: '17/09'
         }
       ]

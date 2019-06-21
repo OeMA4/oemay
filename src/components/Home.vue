@@ -7,29 +7,25 @@
                 sm6
                 md8
                 text-xs-center>
-                    <v-avatar
-                    size=256
-                    color="grey lighten-4">
-                        <img src="../assets/me.jpg" alt="avatar">
-                    </v-avatar>
+                <img class ="myAvatar" src="../assets/me.jpg">
                 </v-flex>
                 <v-layout column>
                     <v-flex>
-                        <span class="hello"> Hello! </span>
+                        <span class="hello"> Hello, </span>
                     </v-flex>
                     <v-flex>
-                        <span class="aboutText"> About me in few parts: </span>
+                        <span class="aboutText"> a bit about me: </span>
                     </v-flex>
                     <v-flex>
                         <v-layout row>
-                            <v-flex>
-                                <a class="myButton"> Resume </a>
+                            <v-flex mr-2 ml-2>
+                                <a class="myButton resumeButton"> Resume  </a>
                             </v-flex>
-                            <v-flex>
-                                <a class="myButton"> My Work </a>
+                            <v-flex mr-2 ml-2>
+                                <a class="myButton workButton"> My Work </a>
                             </v-flex>
-                            <v-flex>
-                                <a class="myButton"> My Skills </a>
+                            <v-flex mr-2 ml-2>
+                                <a class="myButton skillButton"> My Skills </a>
                             </v-flex>
                         </v-layout>
                     </v-flex>
@@ -54,23 +50,45 @@ export default {
 <style scoped>
 .hello {
     font-size: 80px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
 }
 .aboutText {
     font-size: 60px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .myButton {
-  background-color: cyan;
-  border: none;
-  color: white;
-  padding: 50px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 500px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    padding: 50% 0;
+    border-radius: 50%;
+    font-family: Helvetica, Arial Black, sans;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 4px 2px;
+}
+.myAvatar {
+    border-radius: 50%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    vertical-align: middle;
+    height: 300px;
+    width: 400px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.resumeButton {
+    background-color:darkcyan ;
+}
+.workButton {
+    background-color:wheat ;
+}
+.skillButton {
+    background-color:cornflowerblue ;
+
 }
 </style>

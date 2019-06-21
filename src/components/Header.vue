@@ -25,15 +25,15 @@ export default {
 
 <style scoped>
 .name {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
-    font-family: fantasy;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .profession {
     font-size: 20px;
-    font-family: fantasy;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
 }
 .buttonText {
-    font-family: fantasy;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
 }
 </style>
