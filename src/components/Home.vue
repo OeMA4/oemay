@@ -1,14 +1,7 @@
 <template>
-   <v-container mt-5>
+   <v-container>
        <v-layout column>
             <v-layout row>
-                <v-flex
-                xs12
-                sm6
-                md8
-                text-xs-center>
-                <img class ="myAvatar" src="../assets/me.jpg">
-                </v-flex>
                 <v-layout column>
                     <v-flex>
                         <span class="hello"> Hello, </span>
@@ -33,6 +26,13 @@
                         Hi! My name is Ömer Ayar! I am a software engineer at MaibornWolff and computer science student at the TU Darmstadt.
                     </v-flex>
                 </v-layout>
+                 <v-flex
+                xs12
+                sm6
+                md8
+                text-xs-center>
+                <img class ="myAvatar" src="../assets/me.jpg">
+                </v-flex>
             </v-layout>
        </v-layout>
    </v-container>

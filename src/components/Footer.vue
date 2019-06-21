@@ -8,9 +8,13 @@
       flat
       tile>
       <v-card-title class="teal">
-        <strong class="subheading vue">Get in touch with me!</strong>
+        <span class="subheading vue">Designed with ❤️ and
+          <v-avatar>
+          <img src="../assets/vueIcon.png">
+        </v-avatar>
+        <v-btn round href="https://www.vuejs.org"> Vue.js </v-btn> </span>
         <v-spacer></v-spacer>
-        <span class="subheading vue">Designed with ❤️ and <v-btn round href="https://www.vuejs.org"> Vue.js </v-btn> </span>
+        <strong class="subheading vue">&copy;2019 — <strong>OeMAy</strong></strong>
         <v-spacer></v-spacer>
         <v-btn
           v-for="data in profiles"
@@ -21,9 +25,6 @@
           {{ data.icon }}
         </v-btn>
       </v-card-title>
-      <v-card-actions class="justify-center">
-        &copy;2019 — <strong>OeMAy</strong>
-      </v-card-actions>
     </v-card>
   </v-footer>
 </template>

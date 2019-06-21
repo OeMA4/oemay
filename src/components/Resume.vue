@@ -2,11 +2,11 @@
 <v-container>
   <div class="resumeTitle"> RESUME </div>
     <v-layout column>
+      <v-flex v-for="i in items" :key="i.id">
         <resume-item
-        v-for="i in items"
-        :key="i.id"
         :sectionTitle="i.sectionTitle"
         :data="i.data"/>
+      </v-flex>
     </v-layout>
 </v-container>
 </template>
@@ -24,14 +24,14 @@ export default {
           sectionTitle: 'Work Experience',
           data: [
             {
-              title: 'STUDENT TRAINEE – MOBILE APPLICATION TESTER – DEUTSCHE TELEKOM: PRODUCTS & INNOVATIONS, DARMSTADT (GERMANY)',
-              date: '09/2015 – 03/2016',
-              description: 'Infrastructure as code (Vagrant + Ansible), JIRA Rest API (Ruby), GitLab Continuous Integration'
-            },
-            {
               title: 'STUDENT TRAINEE – SOFTWARE ENGINEER, MAIBORNWOLFF GMBH, FRANKFURT AM MAIN (GERMANY)',
               date: '10/2016 - 8/2019',
               description: 'Testing functionality of Telekom Smart Home application, Draw up of test schedules, First experience with automated test procedures with QBot'
+            },
+            {
+              title: 'STUDENT TRAINEE – MOBILE APPLICATION TESTER – DEUTSCHE TELEKOM: PRODUCTS & INNOVATIONS, DARMSTADT (GERMANY)',
+              date: '09/2015 – 03/2016',
+              description: 'Infrastructure as code (Vagrant + Ansible), JIRA Rest API (Ruby), GitLab Continuous Integration'
             }
           ]
         },
@@ -62,7 +62,7 @@ export default {
           data: [
             {
               title: '',
-              date: 'Ä',
+              date: 'some text',
               description: 'asdas'
             }
           ]

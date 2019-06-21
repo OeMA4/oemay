@@ -2,21 +2,22 @@
     <v-container>
         <v-divider></v-divider>
         <v-layout row mt-2>
-          <v-flex m-3>
+
+          <v-flex shrink>
             <div class="resumeTitle"> {{  sectionTitle }} </div>
           </v-flex>
-          <v-flex m-6>
+
+          <v-flex>
             <v-layout column>
-              <v-flex>
                 <ParagraphItem v-for="item in data"
                   :key="item.title"
                   :title="item.title"
                   :date="item.date"
                   :description="item.description"
                 />
-              </v-flex>
             </v-layout>
           </v-flex>
+
         </v-layout>
     </v-container>
 </template>

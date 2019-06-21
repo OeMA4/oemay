@@ -1,7 +1,7 @@
 <template>
     <v-container>
-        <v-layout column>
-            <span class ="paragraphTitle" >{{ title }} </span>
+        <v-layout column align-start justify-start>
+            <span class ="paragraphTitle"> {{ title }} </span>
             <span class="paragraphDate"> {{ date }} </span>
             <span class="paragraphDescription"> {{ description }} </span>
         </v-layout>

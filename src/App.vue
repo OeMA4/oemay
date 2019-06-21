@@ -34,6 +34,6 @@ export default {
   color:brown;
 }
 .content {
-  background-color:gainsboro
+  background-color:aliceblue
 }
 </style>
