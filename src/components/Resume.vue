@@ -1,12 +1,14 @@
 <template>
+<v-container>
+  <div class="resumeTitle"> RESUME </div>
     <v-layout column>
         <resume-item
         v-for="i in items"
         :key="i.id"
-        :title="i.title"
-        :description="i.description"
-        :date="i.date"/>
+        :sectionTitle="i.sectionTitle"
+        :data="i.data"/>
     </v-layout>
+</v-container>
 </template>
 
 <script>
@@ -19,27 +21,51 @@ export default {
       items: [
         {
           id: '1',
-          title: 'Software Engineering',
-          description: 'Working for MaibornWolff',
-          date: '17/09'
+          sectionTitle: 'Work Experience',
+          data: [
+            {
+              title: 'STUDENT TRAINEE – MOBILE APPLICATION TESTER – DEUTSCHE TELEKOM: PRODUCTS & INNOVATIONS, DARMSTADT (GERMANY)',
+              date: '09/2015 – 03/2016',
+              description: 'Infrastructure as code (Vagrant + Ansible), JIRA Rest API (Ruby), GitLab Continuous Integration'
+            },
+            {
+              title: 'STUDENT TRAINEE – SOFTWARE ENGINEER, MAIBORNWOLFF GMBH, FRANKFURT AM MAIN (GERMANY)',
+              date: '10/2016 - 8/2019',
+              description: 'Testing functionality of Telekom Smart Home application, Draw up of test schedules, First experience with automated test procedures with QBot'
+            }
+          ]
         },
         {
           id: '2',
-          title: 'Software Engineering',
-          description: 'Working for MaibornWolff',
-          date: '17/09'
+          sectionTitle: 'Education',
+          data: [
+            {
+              title: 'TECHNICAL UNIVERSITY OF DARMSTADT, M. SC. COMPUTER SCIENCE',
+              date: 'since 10/2017',
+              description: 'Master of Science Degree'
+            },
+            {
+              title: 'TECHNICAL UNIVERSITY OF DARMSTADT, B. SC. COMPUTER SCIENCE',
+              date: '10/2013 – 10/2017',
+              description: 'Bachelor of Science Degree'
+            },
+            {
+              title: 'WEIBELFELDSCHULE, UNIVERSITY ENTRANCE QUALIFICATION (ABITUR),DREIEICH (GERMANY)',
+              date: '08/2005 – 06/2013',
+              description: 'University Entrance Qualification'
+            }
+          ]
         },
         {
           id: '3',
-          title: 'Software Engineering',
-          description: 'Working for MaibornWolff',
-          date: '17/09'
-        },
-        {
-          id: '4',
-          title: 'Software Engineering',
-          description: 'Working for MaibornWolff',
-          date: '17/09'
+          sectionTitle: 'Side Projects',
+          data: [
+            {
+              title: '',
+              date: 'Ä',
+              description: 'asdas'
+            }
+          ]
         }
       ]
     }
@@ -48,5 +74,8 @@ export default {
 </script>
 
 <style scoped>
-
+.resumeTitle {
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 </style>

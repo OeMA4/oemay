@@ -2,10 +2,10 @@
 <v-container>
     <v-layout row>
         <v-flex >
-            <div>
-            <span class="name"> Ömer M. Ayar </span><br>
-            <span class="profession">Software Engineer / Human</span>
-            </div>
+            <router-link to="/">
+                <span class="name"> Ömer M. Ayar </span><br>
+                <span class="profession">Software Engineer / Human</span>
+            </router-link>
         </v-flex>
         <v-spacer/>
         <v-flex class ="buttonText">
@@ -28,6 +28,7 @@ export default {
     font-size: 40px;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
 }
 .profession {
     font-size: 20px;

@@ -2,7 +2,6 @@
   <v-footer
     light
     height="auto"
-    fixed
   >
     <v-card
       class="flex"

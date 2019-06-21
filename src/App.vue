@@ -3,8 +3,8 @@
     <v-content class="content">
       <Header/>
       <router-view/>
-      <Footer/>
     </v-content>
+    <Footer/>
   </v-app>
 </template>
 
