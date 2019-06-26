@@ -50,7 +50,7 @@ export default {
     font-weight: bold;
 }
 .aboutText {
-    font-size: 60px;
+    font-size: 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .myAvatar {

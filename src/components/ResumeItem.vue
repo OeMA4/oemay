@@ -41,16 +41,16 @@ export default {
 
 <style scoped>
 .title {
-    font-size: 20px;
+    font-size: 30px;
 }
 .resumeTitle {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   font-size: 17px;
-  color: #fff;
+  color:black;
   line-height: 150px;
   text-align: center;
-  background-color:teal;
+  background-color:cornsilk;
 }
 </style>

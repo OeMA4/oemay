@@ -32,17 +32,14 @@ export default {
 </script>
 
 <style scoped>
-.title {
-    font-size: 20px;
-}
 .paragraphTitle {
     font-weight: bold;
+    font-size: 20px;
 }
 .paragraphDate {
     font-weight:300;
-    font-family:fantasy
-}
-.paragraphDescription{
+    font-family:fantasy;
+    font-size: 16px;
 }
 .disable-events {
   pointer-events: none

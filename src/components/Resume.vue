@@ -55,17 +55,6 @@ export default {
               description: 'University Entrance Qualification'
             }
           ]
-        },
-        {
-          id: '3',
-          sectionTitle: 'Side Projects',
-          data: [
-            {
-              title: '',
-              date: 'some text',
-              description: 'asdas'
-            }
-          ]
         }
       ]
     }

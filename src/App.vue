@@ -34,6 +34,8 @@ export default {
   color:brown;
 }
 .content {
-  background-image: url('assets/background.jpg')
+  background-image: url('assets/background.jpg');
+  background-size: 100% 100%;
+
 }
 </style>
