@@ -9,7 +9,7 @@
         </v-flex>
         <v-spacer/>
         <v-flex class ="buttonText">
-            <v-btn round light to="/" > Home </v-btn>
+            <v-btn round to="/" > Home </v-btn>
             <v-btn round to="/resume" > Resume </v-btn>
             <v-btn round to="/projects" > Projects </v-btn>
             <v-btn round to="/contact" > Contact </v-btn>
@@ -41,6 +41,5 @@ a {
 .buttonText {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
 }
-button {
-}
+
 </style>
