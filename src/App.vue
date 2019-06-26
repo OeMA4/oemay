@@ -34,6 +34,6 @@ export default {
   color:brown;
 }
 .content {
-  background-color:aliceblue
+  background-image: url('assets/background.jpg')
 }
 </style>
